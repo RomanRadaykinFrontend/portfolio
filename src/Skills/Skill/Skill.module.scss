@@ -1,0 +1,33 @@
+@import "src/Common/styles/Fonts.module";
+
+
+.skill {
+  width: 200px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+    padding: 20px;
+
+  .aboutSkill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon{
+      width: 70px;
+      height: 70px;
+      @include fonts_3
+    }
+    .title{
+      @include fonts_3;
+      margin: 15px auto;
+      border-bottom: 4px solid $primeColor;
+    }
+  }
+    .description{
+        @include fonts_4;
+      text-align: center;
+    }
+}
+

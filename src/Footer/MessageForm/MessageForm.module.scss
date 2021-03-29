@@ -1,0 +1,27 @@
+@import "../../Common/styles/Fonts.module";
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .userName, .userEmail{
+        padding: 15px;
+        border: none;
+    }
+    .userMessage{
+        height: 100px;
+        padding: 15px;
+        border: none;
+    }
+    .userEmail, .userMessage{
+        margin-top: 20px;
+    }
+    .buttonSend{
+        @include buttons;
+        width: 250px;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+}
+

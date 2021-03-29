@@ -1,0 +1,112 @@
+@import "src/Common/styles/Fonts.module";
+
+.mainBlock {
+  display: flex;
+  padding: 30px 0;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .mainContainer {
+    justify-content: space-around;
+  }
+
+  .photoWrapper {
+    border: 5px solid $primeColor;
+    position: relative;
+    width: 400px;
+    height: 500px;
+
+    .photo {
+      margin-left: 40px;
+      margin-top: -30px;
+      width: 400px;
+      height: 500px;
+      background-color: black;
+      background-image: url("./../Common/images/mainfoto.jpeg");
+      background-size: 100% auto;
+      position: static;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .text {
+    text-align: center;
+    width: 500px;
+    background-color: white;
+    color: white;
+
+    h1 {
+      color: black;
+      @include fonts_1;
+      margin: 0;
+
+      span {
+        color: rgb(232, 49, 49);
+      }
+    }
+
+    h3 {
+      color: black;
+      @include fonts_2;
+      margin: 20px 0;
+    }
+
+    .typed {
+      color: rgb(232, 49, 49);
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .mainBlock {
+    .photoWrapper {
+      width: 300px;
+      height: 375px;
+
+      .photo {
+        width: 300px;
+        height: 375px;
+      }
+    }
+
+    .text {
+      h1 {
+        @include fonts600px
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainBlock {
+    .photoWrapper {
+      width: 250px;
+      height: 312px;
+      border: none;
+
+      .photo {
+        width: 250px;
+        height: 312px;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+
+    .text {
+      h1 {
+        @include fonts450px
+      }
+    }
+  }
+}
+
+
+
+
+
+

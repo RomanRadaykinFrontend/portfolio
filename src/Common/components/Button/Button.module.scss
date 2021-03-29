@@ -1,0 +1,20 @@
+@import "./src/Common/styles/Fonts.module";
+
+.button{
+    a{
+        border: 4px solid $primeColor;
+        text-decoration: none;
+        @include fonts_4;
+        font-weight: bold;
+        padding: 25px 80px;
+        transition: .5s;
+        color: black;
+        &:visited{
+            color: black;
+        }
+        &:hover{
+            background-color: $primeColor;
+            color: white;
+        }
+    }
+}

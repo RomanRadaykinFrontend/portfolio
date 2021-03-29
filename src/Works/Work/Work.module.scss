@@ -1,0 +1,77 @@
+@import "src/Common/styles/Fonts.module";
+
+.work {
+  width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+
+  .image {
+    width: 100%;
+    height: 300px;
+    background-image: url("./../../Common/images/placeholder.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .info {
+    padding: 20px;
+    a{
+      color: black;
+      text-decoration: none;
+      &:visited{
+        color: black
+      }
+    }
+    &:hover{
+      .title{
+        color: $primeColor;
+        cursor: pointer;
+      }
+      .description{
+        .arrow{
+          margin-left: 80%;
+        }
+      }
+    }
+    h3 {
+      @include fonts_3;
+      margin: 10px 0;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      .descriptionBody {
+        @include fonts_4;
+        width: 100%;
+      }
+      .arrow{
+        transition: .5s;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 1125px) {
+  .work {
+    margin: 20px 0;
+  }
+}
+
+
+@media screen and (max-width: 470px) {
+  .work {
+    width: 300px;
+  }
+}
+
