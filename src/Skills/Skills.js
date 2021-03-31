@@ -5,8 +5,10 @@ import Skill from "./Skill/Skill";
 import Fade from "react-reveal/Fade";
 
 function Skills() {
-    const descr = 'Ut enim ad minima veniam,' +
-        ' quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ';
+    const descriptionHC = 'Grid, Flex, SCSS, Bootstrap 4, Material UI, BEM';
+    const descriptionReact = 'Class Components, Lifecycle, Hooks, HOC, Flux, TypeScript';
+    const descriptionRedux = 'Redux-Thunk, React-Redux, Axios, Formik';
+    const descriptionJS = 'ECMAScript 6, promise, classes, OOP principles, Unit-tests, RestAPI';
 
     let [start, setStart] = useState(false);
 
@@ -36,13 +38,13 @@ function Skills() {
                 <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                     <h2>Skills</h2>
                     <div className={style.skills} ref={divRef}>
-                        <Skill title={'HTML/CSS'} description={descr}
+                        <Skill title={'HTML/CSS'} description={descriptionHC}
                                maxValue={94} start={start}/>
-                        <Skill title={'JavaScript'} description={descr}
+                        <Skill title={'JavaScript'} description={descriptionJS}
                                maxValue={85} start={start}/>
-                        <Skill title={'React'} description={descr}
+                        <Skill title={'React'} description={descriptionReact}
                                maxValue={93} start={start}/>
-                        <Skill title={'Redux'} description={descr}
+                        <Skill title={'Redux'} description={descriptionRedux}
                                maxValue={88} start={start}/>
                     </div>
                 </div>

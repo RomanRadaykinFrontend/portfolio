@@ -4,7 +4,7 @@ import React from "react";
 
 const Button = (props) => {
     return <div className={style.button}>
-        <a href="#">
+        <a href={props.refString}>
             {props.text}
         </a>
     </div>

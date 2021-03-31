@@ -5,12 +5,14 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 function Work(props) {
 
+    const ref = props.image
+
     return (
         <div className={style.work}>
-            <div className={style.image}>
+            <div className={style.image} style={{backgroundImage: `url(${ref})`}}>
             </div>
             <div className={style.info}>
-                <a href="#">
+                <a href={props.refToGit}>
                     <h3 className={style.title}>{props.title}</h3>
                 </a>
                 <div className={style.description}>
