@@ -10,14 +10,14 @@ function Works() {
     const descriptionStarWars = 'A guide to the Star Wars universe from a dedicated fan and developer. '
     const descriptionAnotherProject = 'Project in progress...'
 
-    const sw = 'http://images.vfl.ru/ii/1617212554/52c9afe9/33897026_m.jpg'
-    const todo = 'http://images.vfl.ru/ii/1617212554/8b011566/33897027_m.jpg'
-    const counter = 'http://images.vfl.ru/ii/1617212554/36711f18/33897025_m.jpg'
-    const another = 'http://images.vfl.ru/ii/1617212554/67136445/33897024_m.jpg'
+    const sw = 'http://images.vfl.ru/ii/1617303741/5dc1ed36/33911285_m.png'
+    const todo = 'http://images.vfl.ru/ii/1617303742/814f4a79/33911286_m.png'
+    const counter = 'http://images.vfl.ru/ii/1617303743/b1c76006/33911287_m.png'
+    const another = 'http://images.vfl.ru/ii/1617303739/976b0d99/33911284_m.png'
 
     const todoRef = 'https://github.com/RomanRadaykinFrontend/todo-list'
-    const starWarsRef = 'https://github.com/RomanRadaykinFrontend/todo-list'
-    const counterRef = 'https://github.com/RomanRadaykinFrontend/todo-list'
+    const starWarsRef = 'https://github.com/RomanRadaykinFrontend/star-wars-app'
+    const counterRef = 'https://github.com/RomanRadaykinFrontend/counter'
 
     return (
         <div className={style.worksBlock} id={'works-ref'}>
