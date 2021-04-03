@@ -30,7 +30,7 @@ function Footer() {
                             <span className={style.mail}>roman.radaikin@yandex.ru</span>
                         </div>
                         <div className={style.socialNetworks}>
-                            <a className={style.refWrapper} href="https://www.linkedin.cn/in/roman-radaykin-646ab220a/"><FontAwesomeIcon className={style.iconItem} icon={faLinkedinIn} size={'2x'}/></a>
+                            <a className={style.refWrapper} href="https://www.linkedin.com/in/roman-radaykin-80315720b/"><FontAwesomeIcon className={style.iconItem} icon={faLinkedinIn} size={'2x'}/></a>
                             <a className={style.refWrapper} href="https://t.me/radaykinro"><FontAwesomeIcon className={style.iconItem} icon={faTelegramPlane} size={'2x'}/></a>
                             <a className={style.refWrapper} href="https://github.com/RomanRadaykinFrontend"><FontAwesomeIcon className={style.iconItem} icon={faGithub} size={'2x'}/></a>
                         </div>
